@@ -61,19 +61,41 @@ export default function Home() {
         </div>
       </div>
     </section>
-
+    
     <section className={styles.about}>
       <h2>WHAT WE DO</h2>
       <div className={styles.aboutGrid}>
         <div className={styles.aboutCard}>
-            <Image src='/Assets/Background/tim-banner-1.jpg' width='300' height='200' alt=''></Image>
+            <Image src='/Assets/Background/tim-banner-1.jpg' width='500' height='300' alt=''></Image>
+            <div>
+              <h2>Logging</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quaerat.</p>
+            </div>
         </div>
         <div className={styles.aboutCard}>
-        <Image src='/Assets/Background/tim-banner-2.jpg' width='300' height='200' alt=''></Image>
+        <Image src='/Assets/Background/tim-banner-2.jpg' width='500' height='300' alt=''></Image>
+        <div>
+              <h2>Harvesting</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quaerat.</p>
+            </div>
         </div>
         <div className={styles.aboutCard}>
-        <Image src='/Assets/Background/tim-banner-3.jpg' width='300' height='200' alt=''></Image>
+        <Image src='/Assets/Background/tim-banner-3.jpg' width='500' height='300' alt=''></Image>
+        <div>
+              <h2>Logging</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quaerat.</p>
+            </div>
         </div>
+      </div>
+      <button className={styles.aboutBtn}>Learn more</button>
+    </section>
+
+    <section className={styles.promotion}>
+      <div>
+        <h1>We Buy Red Pine Poles, Softwood, Hardwood <br />
+         & Standing Timber
+        </h1>
+        <p>Call Us now: (123) 456 789</p>
       </div>
     </section>
 
