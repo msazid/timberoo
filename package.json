@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+<<<<<<< HEAD
     "export": "next export"
+=======
+    "export":"next export"
+>>>>>>> 1e2c8656e1691c7e6cd77a016ed4be97b225793b
   },
   "dependencies": {
     "next": "12.1.6",
