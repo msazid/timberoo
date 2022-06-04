@@ -1,5 +1,105 @@
-.container {
-  padding: 0 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,800;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.heroBanner{
+  background-image: url('/Assets/Background/tim-banner-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:90vh;
+  background-color: rgba(0, 0, 0 ,0.7);
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bannerTitleSmall{
+  color: #f0eddf;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+.bannerTitleLarge{
+  margin: 0;
+  color: #f0eddf;
+  font-size: 140px;
+  text-align: center;
+}
+.bannerBtn{
+  background-color:#b18857;
+  border:none;
+  padding: 12px 35px;
+  color: #f0eddf;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.shortDes{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.shortDesCard{
+  background-color: #504037;
+  color: #E9E4D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.shortDesCardBody{
+  width: 80%;
+}
+.shortDesCardBody h1{
+  font-size: 40px;
+  font-family: 'lato';
+}
+.shortDesCardBody p{
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+.shortDesCardBody button{
+  width: 222px;
+  height: 50px;
+  color: #504037;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #f0eddf;
+  border: none;
+  cursor: pointer;
+}
+
+.about{
+  background-color: #f3f1eb;
+}
+.about h2{
+  margin-top: 0;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 35px;
+  color: #504037;
+}
+
+.aboutGrid{
+  background-color: #f3f1eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.aboutCard{
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 400px;
+  text-align: center;
+  color: #f0eddf;
 }
 
 .main {
@@ -11,6 +111,8 @@
   justify-content: center;
   align-items: center;
 }
+
+
 
 .footer {
   display: flex;
@@ -66,11 +168,12 @@
 }
 
 .grid {
+  background-color: #b18857;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .card {
@@ -79,28 +182,34 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  text-align: center;
+  color: #f0eddf;
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.card span{
+  font-size: 30px;
+  padding: 10px;
+  background-color: #f0eddf;
+  color: #b18857;
+  border-radius: 50%;
 }
 
 .card h2 {
-  margin: 0 0 1rem 0;
+  margin:  2rem 0 .5rem 0;
   font-size: 1.5rem;
+  font-family: 'Poppins';
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
+  font-family: 'Poppins';
 }
 
 .logo {
@@ -112,5 +221,30 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+@media (max-width:414px) {
+  .bannerTitleSmall{
+    color: #f0eddf;
+    font-size: 20px;
+    text-align: center;
+  }
+  .bannerTitleLarge{
+    color: #f0eddf;
+    font-size: 60px;
+    text-align: center;
+  }
+  .bannerBtn{
+    background-color:#b18857;
+    border:none;
+    padding: 10px 25px;
+    color: #f0eddf;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .shortDes{
+    display: grid;
   }
 }
