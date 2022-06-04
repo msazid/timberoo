@@ -9,7 +9,7 @@ function Nav() {
         {title:'Contact',href:'/contact'},
     ]
     return (
-         <div style={{backgroundColor:'#b18857'}}>
+         <div style={{backgroundColor:'#b18857',boxShadow:'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}}>
                 <nav className={NavCSS.navbar}>
                 <ul className={NavCSS.navItems}>
                     {

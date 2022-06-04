@@ -100,7 +100,32 @@ export default function Home() {
     </section>
 
       <footer className={styles.footer}>
-        
+        <div className={styles.footerGrid}>
+          <div className={styles.footerCard}>
+          <h1 className={styles.brand}>Timberoo</h1>
+          <p  className={styles.footerText}> Our commitment does not end with a finished package of timber. We also offer expertise, service, and distribution solutions that put the finishing touch on every deal.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, molestiae eius? Quasi culpa incidunt dicta.</p>
+          </div>
+          <div className={styles.footerCard}>
+            <h1  className={styles.footerAboutTitle}>About</h1>
+            <p className={styles.footerAboutText}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, totam provident atque rerum quam placeat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur, similique deserunt cumque debitis!</p>
+          </div>
+          <div className={styles.footerCard}>
+            <h1 className={styles.footerContactTitle}>Contact Us</h1>
+            <p>tebaroo@env.com</p>
+            <p>+ 123 456 758</p>
+            <p>New York</p>
+          </div>
+          <div className={styles.footerCard}>
+            <h1 className={styles.footerContactTitle}>Menu</h1>
+            <p>Home</p>
+            <p>About</p>
+            <p>Shop</p>
+            <p>Contact</p>
+          </div>
+        </div>
+        <h3 className={styles.copyRight}>Timberoo © 2022. All rights reserved</h3>
       </footer>
     </div>
   )
